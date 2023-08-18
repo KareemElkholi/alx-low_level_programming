@@ -10,5 +10,5 @@ void print_numbers(void)
 	char str[] = "0123456789\n";
 
 	for (i = 0; i < 11; i++)
-		_putchar([i]);
+		_putchar(str[i]);
 }
