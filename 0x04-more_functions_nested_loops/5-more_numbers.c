@@ -11,5 +11,5 @@ void print_more_numbers(void)
 
 	for (i = 0; i < 10; i++)
 		for (j = 0; j < 21; j++)
-			_putchar(str[i]);
+			_putchar(str[j]);
 }
