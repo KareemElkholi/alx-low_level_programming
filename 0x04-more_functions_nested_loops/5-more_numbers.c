@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_more_numbers - prints more numbers
+ * more_numbers - prints more numbers
  */
 
-void print_more_numbers(void)
+void more_numbers(void)
 {
 	int i, j;
 	char str[] = "01234567891011121314\n";
