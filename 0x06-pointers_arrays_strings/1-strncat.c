@@ -5,6 +5,7 @@
  * @dest: first string
  * @src: second string
  * @n: number of characters
+ * Return: result
  */
 
 char *_strncat(char *dest, char *src, int n)
@@ -16,4 +17,5 @@ char *_strncat(char *dest, char *src, int n)
 		i++;
 	while (j < n)
 		dest[i++] = src[j++];
+	return (dest);
 }
