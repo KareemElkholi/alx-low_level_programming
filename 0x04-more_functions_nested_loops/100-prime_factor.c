@@ -2,6 +2,7 @@
 
 /**
  * main - prints the largest prime factor of the number 612852475143
+ * Return: 0
  */
 
 int main(void)
@@ -15,5 +16,6 @@ int main(void)
 			max = count;
 			num /= count;
 		}
-	printf("%ld\n",max);
+	printf("%ld\n", max);
+	return (0);
 }
