@@ -1,4 +1,3 @@
-#include <math.h>
 #include "main.h"
 
 /**
@@ -20,8 +19,24 @@ unsigned int binary_to_uint(const char *b)
 
 	for (i = 0; i < length; i++)
 	{
-		sum += (b[i] - '0') * pow(2, (length - i - 1));
+		sum += (b[i] - '0') * _pow_recursion(2, (length - i - 1));
 	}
 
 	return (sum);
+}
+
+/**
+ * _pow_recursion - returns the value of x raised to the power of y
+ * @x: number
+ * @y: number
+ * Return: result
+ */
+
+int _pow_recursion(int x, int y)
+{
+	if (y < 0)
+		return (-1);
+	else if (y == 0)
+		return (1);
+	return (x * _pow_recursion(x, --y));
 }
